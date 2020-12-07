@@ -252,7 +252,7 @@ module Octopus
     protected
 
     def connection_bad(error)
-      error.include? "PG::ConnectionBad" || error.include? "PG::UnableToSend"
+      error.include?("PG::ConnectionBad") || error.include?("PG::UnableToSend")
     end
 
     # @thiagopradi - This legacy method missing logic will be keep for a while for compatibility
